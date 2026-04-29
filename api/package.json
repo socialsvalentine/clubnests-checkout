@@ -1,0 +1,7 @@
+{
+  "name": "clubnests-checkout",
+  "version": "1.0.0",
+  "dependencies": {
+    "stripe": "^13.0.0"
+  }
+}
