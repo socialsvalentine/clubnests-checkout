@@ -40,8 +40,7 @@ export default async function handler(req, res) {
       success_url: 'https://clubnests-site.vercel.app/',
       cancel_url: 'https://clubnests.vercel.app',,/'
     });
-    return res.status(200).json({ url: session.url });
-  } catch (error) {
+    return res.status(200).json({ url: session.url, sessionId: session.id });
     console.error('Error:', error.message);
     return res.status(500).json({ error: error.message });
   }
