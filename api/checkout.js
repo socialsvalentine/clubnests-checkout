@@ -38,7 +38,7 @@ export default async function handler(req, res) {
       line_items: line_items,
       mode: 'payment',
       success_url: 'https://clubnests-site.vercel.app/',
-      cancel_url: 'https://clubnests-site.vercel.app/'
+      cancel_url: 'https://clubnests.vercel.app',,/'
     });
     return res.status(200).json({ url: session.url });
   } catch (error) {
