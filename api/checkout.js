@@ -37,11 +37,11 @@ export default async function handler(req, res) {
         quantity: 1
       }],
       mode: 'payment',
-      success_url: 'https://clubnests.vercel.app',
+      success_url: 'https://clubnests.vercel.app?payment=success',
       cancel_url: 'https://clubnests.vercel.app'
     });
 
-    return res.status(200).json({ url: session.url, sessionId: session.id });
+    return res.status(200).json({ url: session.url });
 
   } catch (error) {
     console.error('Error:', error.message);
